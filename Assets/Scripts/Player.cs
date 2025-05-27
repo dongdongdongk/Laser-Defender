@@ -15,7 +15,12 @@ public class Player : MonoBehaviour
 
     Vector2 minBounds;
     Vector2 maxBounds;
+    Shooter shooter;
 
+    void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
     void Start()
     {
         InitBounds();
@@ -37,7 +42,7 @@ public class Player : MonoBehaviour
     {
         Vector2 delta = rawInput * moveSpeed * Time.deltaTime;
         Vector2 newPos = new Vector2();
-        newPos.x = Mathf.Clamp(transform.position.x + delta.x, minBounds.x + paddingLeft , maxBounds.x - paddingRight);
+        newPos.x = Mathf.Clamp(transform.position.x + delta.x, minBounds.x + paddingLeft, maxBounds.x - paddingRight);
         newPos.y = Mathf.Clamp(transform.position.y + delta.y, minBounds.y + paddingBottom, maxBounds.y - paddingTop);
         transform.position = newPos;
     }
@@ -46,5 +51,13 @@ public class Player : MonoBehaviour
     {
         rawInput = value.Get<Vector2>();
         Debug.Log("rawInput: " + rawInput);
+    }
+    
+    void OnFire(InputValue value)
+    {
+        if (shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 }
