@@ -154,10 +154,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1263967889}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.004058838, y: 0}
+  m_SizeDelta: {x: -4, y: -66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98167637
 MonoBehaviour:
@@ -197,6 +197,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98167635}
   m_CullTransparentMesh: 1
+--- !u!114 &497598954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5762813745850204798, guid: 11a3054e48a542042b2c017fa0d18f86, type: 3}
+  m_PrefabInstance: {fileID: 1242972887788951938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93055120f1592c841b14369c3fd19508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,8 +430,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -7.5, y: 0}
-  m_SizeDelta: {x: -15, y: 0}
+  m_AnchoredPosition: {x: -8, y: 0}
+  m_SizeDelta: {x: -16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &907115564
 GameObject:
@@ -679,7 +690,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 0}
+  m_SizeDelta: {x: -216.764, y: 66}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1128706430
 MonoBehaviour:
@@ -994,6 +1005,7 @@ GameObject:
   - component: {fileID: 1354556756}
   - component: {fileID: 1354556755}
   - component: {fileID: 1354556754}
+  - component: {fileID: 1354556758}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1084,6 +1096,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1354556758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354556753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ce9a9405cf086409f0d6144171e558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 1263967890}
+  playerHealth: {fileID: 497598954}
+  scoreText: {fileID: 1820334764}
 --- !u!1 &1490934301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1265,7 @@ GameObject:
   - component: {fileID: 1820334765}
   - component: {fileID: 1820334764}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1492,8 +1519,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5762813745850204798, guid: 11a3054e48a542042b2c017fa0d18f86, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762813745850204798, guid: 11a3054e48a542042b2c017fa0d18f86, type: 3}
       propertyPath: isPlayer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7797201445458144106, guid: 11a3054e48a542042b2c017fa0d18f86, type: 3}
       propertyPath: m_LocalPosition.x
