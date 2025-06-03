@@ -1382,9 +1382,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 6591852271833406777, guid: 930a9aa6567747f42b359f9be9e6a332, type: 3}
+      propertyPath: gameMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2bcc444123ab3a541994874b35c3a999, type: 3}
+    - target: {fileID: 6591852271833406777, guid: 930a9aa6567747f42b359f9be9e6a332, type: 3}
+      propertyPath: mainMenuMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 399855cf4b351a54d80177e44e6d0ae7, type: 3}
     - target: {fileID: 8124920535121881619, guid: 930a9aa6567747f42b359f9be9e6a332, type: 3}
       propertyPath: m_Volume
       value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124920535121881619, guid: 930a9aa6567747f42b359f9be9e6a332, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8124920535121881619, guid: 930a9aa6567747f42b359f9be9e6a332, type: 3}
       propertyPath: m_audioClip
