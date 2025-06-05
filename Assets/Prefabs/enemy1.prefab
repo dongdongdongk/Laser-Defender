@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4396903811520252534}
   - component: {fileID: 5474253051919466333}
   m_Layer: 7
-  m_Name: enemy0
+  m_Name: enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,12 +168,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3324736690033778590, guid: 9c36553afcb706642b1296edd74a18ab, type: 3}
-  projectileSpeed: 10
+  projectileSpeed: 12
   projectileLifetime: 5
-  baseFiringRate: 0.5
+  baseFiringRate: 0.3
   useAI: 1
-  firingRateVariance: 0.5
-  minimumFiringRate: 1
+  firingRateVariance: 0.25
+  minimumFiringRate: 0.1
   isFiring: 0
 --- !u!1 &7819387682580642975
 GameObject:
@@ -248,7 +248,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 200e1f86a52c0864d9266bd50d982a5d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e6a7e371508b4749a28a201543dec4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -7,14 +7,25 @@ public class UIGameOver : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
     ScoreKeeper scoreKeeper;
-
     void Awake()
     {
-        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
-    }
-    void Start()
-    {
-        scoreText.text = "You Scored:\n " + scoreKeeper.GetScore();
     }
 
+    void Start()
+    {
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
+        if (scoreKeeper == null)
+        {
+            Debug.LogError("ScoreKeeper not found in the scene!");
+        }
+        if (scoreKeeper != null)
+        {
+            scoreText.text = "You Scored:\n " + scoreKeeper.GetScore();
+        }
+        else
+        {
+            scoreText.text = "You Scored:\n N/A";
+            Debug.LogError("Cannot display score: ScoreKeeper is null.");
+        }
+    }
 }

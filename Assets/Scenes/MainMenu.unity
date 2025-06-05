@@ -382,7 +382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 369}
+  m_AnchoredPosition: {x: 0, y: 369}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451845700
@@ -1330,7 +1330,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461222120}
   m_CullTransparentMesh: 1
---- !u!1001 &1939544337
+--- !u!1001 &2060453860
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1542,4 +1542,4 @@ SceneRoots:
   - {fileID: 1104952785}
   - {fileID: 1035154944}
   - {fileID: 6341215417344975359}
-  - {fileID: 1939544337}
+  - {fileID: 2060453860}
